@@ -5,4 +5,4 @@
 //Importando os módulos de terceiros (LoDash)
 const _ = require('lodash')
 
-setInterval(() => console.log(_.random(1, 1000)), 2000) //Afunção .random pertence a biblioteca LoDash
+setInterval(() => console.log(_.random(1, 1000)), 2000) //A função .random pertence a biblioteca LoDash
