@@ -16,6 +16,8 @@ console.log(nums)
 console.log(`\nSoma dos elementos do array: ${nums.MeuReduce(soma)}`)
 
 
+
+
 /*
 ==================================================================
 ==---------------------- FINALIZAR CONSOLE ---------------------==
