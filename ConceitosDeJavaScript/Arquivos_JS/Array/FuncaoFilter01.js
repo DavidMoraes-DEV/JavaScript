@@ -45,18 +45,9 @@ console.log(produtos.filter(produtoCaro).filter(produtoCaroFragil))
 
 
 /*
-==================================================================
-==---------------------- FINALIZAR CONSOLE ---------------------==
-==================================================================
+================================================================
+=---------------------- FINALIZAR CONSOLE ---------------------=
+================================================================
 */
-let readline = require('readline');
-let resp = "";
-
-let leitor = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
-
-leitor.question("\n\nPress Enter to Exit...", function (answer) {
-    leitor.close();
-});
+const Console = require('../../app')
+Console.Finalizar()

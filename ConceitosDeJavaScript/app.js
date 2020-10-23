@@ -1,20 +1,19 @@
-'use strict';
-
-console.log('Hello world');
-
 /*
 ================================================================
 =---------------------- FINALIZAR CONSOLE ---------------------=
 ================================================================
 */
-let readline = require('readline');
-let resp = "";
+module.exports = {
+    Finalizar() {
+        let readline = require('readline');
 
-let leitor = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-});
+        let leitor = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
 
-leitor.question("\n\nPress Enter to Exit...", function (answer) {
-    leitor.close();
-});
+        leitor.question("\n\nPress Enter to Exit...", function (answer) {
+            leitor.close();
+        });
+    }
+}
