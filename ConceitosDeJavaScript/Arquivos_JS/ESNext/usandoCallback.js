@@ -37,4 +37,4 @@ getTurma('A', alunos => {
 ================================================================
 */
 const Console = require('../../app')
-Console.Finalizar()
+Console.Loading()

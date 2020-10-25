@@ -23,3 +23,14 @@ class Cachorro extends Animal {
 }
 
 console.log(new Cachorro().falar())
+
+
+
+
+/*
+================================================================
+=---------------------- FINALIZAR CONSOLE ---------------------=
+================================================================
+*/
+const Console = require('../../app')
+Console.Finalizar()

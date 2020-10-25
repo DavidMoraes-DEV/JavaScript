@@ -1,5 +1,5 @@
-// com promise...
 const http = require('http')
+const { Finalizar } = require('../../app')
 
 const getTurma = letra => {
     const url = `http://files.cod3r.com.br/curso-js/turma${letra}.json`
@@ -22,9 +22,17 @@ const getTurma = letra => {
     })
 }
 
-Promise.all([getTurma('A'), getTurma('B'), getTurma('C')])
-    .then(turmas => [].concat(...turmas))
-    .then(alunos => alunos.map(aluno => aluno.nome))
+//Recurso do ES8
+//Objetivo de simplificar o uso de promises, pegando o código assíncrono e transformando ele em uma pegada mais síncrona
+let obterAlunos = async () => {
+    const turmaA = await getTurma('A')
+    const turmaB = await getTurma('B')
+    const turmaC = await getTurma('C')
+    return [].concat(turmaA, turmaB, turmaC)
+} //retorna um objeto AsyncFunction
+
+obterAlunos()
+    .then(alunos => alunos.map(a => a.nome))
     .then(nomes => console.log(nomes))
 
 

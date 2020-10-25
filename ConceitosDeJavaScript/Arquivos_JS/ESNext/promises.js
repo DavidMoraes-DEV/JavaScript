@@ -21,4 +21,4 @@ falarDepoisDe(3, '\n\nQue legal!')
 ================================================================
 */
 const Console = require('../../app')
-Console.Finalizar()
+Console.Loading()

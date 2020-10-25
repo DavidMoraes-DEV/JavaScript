@@ -10,3 +10,14 @@ console.log(clone)
 const grupoA = ['João', 'Pedro', 'Gloria']
 const grupoFinal = ['Maria', ...grupoA, 'Rafaela']
 console.log(grupoFinal)
+
+
+
+
+/*
+================================================================
+=---------------------- FINALIZAR CONSOLE ---------------------=
+================================================================
+*/
+const Console = require('../../app')
+Console.Finalizar()
